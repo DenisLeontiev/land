@@ -1,0 +1,17 @@
+.aboutUs {
+  background-color: #131313;
+  padding-bottom: 96px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid #666;
+    border-radius: 15px;
+  }
+
+  &__item {
+    border: 1px solid #666;
+    padding: 25px;
+    text-align: center;
+  }
+}
