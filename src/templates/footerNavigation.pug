@@ -1,0 +1,22 @@
+- var list = [{
+-     "label": "Service Benefits",
+-     "link": "#service-benefits"
+- }, {
+-     "label": "Gratuity and Employee Loyalty",
+-     "link": "#gratuity-and-employee"
+- }, {
+-     "label": "Data Driven Culture",
+-     "link": "#data-driven-culture"
+- }, {
+-     "label": "Service Terms",
+-     "link": "#service-terms"
+- }, {
+-     "label": "Contacts",
+-     "link": "#contacts"
+- }];
+
+nav.footer-navigation
+    ul.footer-navigation__list
+        each item in list
+            li.footer-navigation__item
+                a(href=item.link)= item.label

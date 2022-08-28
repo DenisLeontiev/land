@@ -58,6 +58,14 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.(png|jpe?g|gif|svg)$/i,
+				loader: 'file-loader',
+				options: {
+					publicPath: '/assets/',
+				  	name: '[path][name].[ext]',
+				},
+			},
+			{
 				test: /.pug$/,
 				use: [ 'pug-loader' ]
 			},

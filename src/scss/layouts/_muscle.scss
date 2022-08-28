@@ -1,0 +1,59 @@
+.muscle {
+    position: relative;
+    background-color: #fff;
+
+    &__container {
+        display: flex;
+        gap: 0 64px;
+        padding-bottom: 88px;
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        width: 60%;
+        max-width: 927px;
+        max-height: 601px;
+        height: 100%;
+
+        img {
+            position: absolute;
+            right: 0;
+            width: auto;
+            height: 100%;
+            max-width: unset;
+
+            &.is-main {
+                top: unset;
+                bottom: 0;
+                left: unset;
+                right: 0;
+                width: auto;
+                height: 100%;
+                max-width: unset;
+            }
+        }
+    }
+
+    &__description {
+        width: 49.5%;
+        max-width: 560px;
+        margin: 0 auto 0 0;
+    }
+
+    &__text {
+        margin: 0 0 54px 0;
+        font-size: 26px;
+        line-height: 120%;
+        color: #131313;
+    }
+
+    span {
+        display: inline-block;
+        padding: 0 6px;
+        background: #E0F067;
+        border-radius: 5px;
+    }
+}

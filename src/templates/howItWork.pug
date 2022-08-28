@@ -1,0 +1,29 @@
+include button
+
+- var list = [{
+-     icon: "/src/assets/scan.svg",
+-     title: "Scan it",
+-     text: "Scanning QR Code",
+- }, {
+-     icon: "/src/assets/pay.svg",
+-     title: "Pay & Ray",
+-     text: "Sending tips",
+- }, {
+-     icon: "/src/assets/done.svg",
+-     title: "Done",
+-     text: "The employee receives a tip",
+- }];
+
+section.section.howItWork
+    .container
+        .howItWork__header
+            h2.white= "How it work"
+            +button("primary", "Watch our video tutorial", "/", "src/assets/arrow.svg")
+        .howItWork__list
+            each item, index in list
+                .howItWork__item
+                    .howItWork__number= `0${index + 1}`
+                    img(src=item.icon, alt=item.title)
+                    .howItWork__description
+                        .howItWork__title= item.title
+                        = item.text

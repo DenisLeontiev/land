@@ -1,0 +1,33 @@
+.lazy {
+    position: relative;
+    width: 100%;
+    transition: 200ms ease-in-out;
+
+    &.is-preloader {
+        filter: blur(3px);
+    }
+
+    &.is-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    &.is-hide {
+        transition-delay: 500ms;
+        opacity: 0;
+    }
+
+    &.is-load {
+        transition-delay: 400ms;
+        opacity: 1;
+    }
+
+    &__wrapper {
+        position: relative;
+        width: fit-content;
+    }
+}

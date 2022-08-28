@@ -1,0 +1,24 @@
+include button
+
+footer.footer
+    .container.footer__container 
+        a(href="/").footer-logo
+            img(src="src/assets/logo.svg", alt="Tipper")
+        
+        include footerNavigation
+
+        .footer__description 
+            p= "OGRN: 1183668045142 dated November 9, 2018"
+            p= "Legal address: 394019, Voronezh region, Voronezh, Solnechnaya st., 7d, office 45"
+
+        include footerSocial
+
+        .footer__contacts 
+            a(href="mailto:info@tipper.com")= "info@tipper.com"
+            a(href="tel:8 000 000 00 00")= "8 000 000 00 00"
+            +button("outline", "Contact Us", "")
+    .container.copyright 
+        .text= "©Tipper, 2022 — All rights reserved"
+        .links 
+            a(href="/")= "Cookie Policy"
+            a(href="/")= "Privacy"

@@ -1,0 +1,33 @@
+.header {
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        width: 175px;
+        height: auto;
+    }
+
+    &-language {
+        font-size: 16px;
+        line-height: 120%;
+        color: #A6A6A6;
+
+        @include easing;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+@import 'headerNavigation';

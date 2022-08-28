@@ -1,0 +1,27 @@
+.culture {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background-color: #fff;
+
+    &__container {
+        display: flex;
+        gap: 0 64px;
+    }
+
+    &__image {
+        width: 50.5%;
+    }
+
+    &__description {
+        width: 49.5%;
+        max-width: 654px;
+        margin: 0 0 0 auto;
+    }
+
+    span {
+        display: inline-block;
+        padding: 0 6px;
+        background: #E0F067;
+        border-radius: 5px;
+    }
+}

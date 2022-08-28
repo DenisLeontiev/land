@@ -1,0 +1,42 @@
+.gratuity {
+
+    &__container {
+        display: flex;
+    }
+
+    &__description {
+        width: 49.625%;
+
+        *:not(h2) {
+            max-width: 655px;
+        }
+
+        .button {
+            margin-top: 29px;
+        }
+    }
+
+    &__image {
+        margin: 0 0 0 auto;
+        width: 50.375%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__text {
+        margin: 0 0 44px 0;
+        font-size: 32px;
+        line-height: 125.5%;
+        color: #272727;
+
+        span {
+            display: inline-block;
+            padding: 0 24px 0 12px;
+            background-color: #E0F067;
+            border-radius: 5px;
+        }
+    }
+}

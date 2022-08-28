@@ -1,0 +1,30 @@
+include button
+
+section.section.gratuity
+    .container.gratuity__container 
+        .gratuity__description
+            h2= "Gratuity and Employee Loyalty to the Moon"
+            .gratuity__text
+                | Implement our e-tip system to boost the gratuity 
+                span= "volume up to 30%" 
+                | and counting which is a key to your employees` loyalty and desire to perform better.
+            p
+                | Your employees may encourage your customers to use Tipper 
+                | at the right moment with a set of dedicated solutions: 
+            ul 
+                li 
+                    | A plastic card with a personal QR code will
+                    br
+                    | accompany the receipt;
+                li= "A stand up display will have all the info;"
+                li= "A sticker will make it fun."
+            p
+                | As a result the employee will 
+                a(href="/")= "raise their income " 
+                | and you as the owner will receive 
+                a(href="/")= "honest and valuable feedback."
+            
+            +button("primary", "Increase loyalty", "/", "src/assets/plus.svg")
+
+        .gratuity__image
+            img(src="/src/assets/gratuity.svg", alt="#")

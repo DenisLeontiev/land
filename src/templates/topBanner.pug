@@ -1,0 +1,26 @@
+include button
+
+.topSection
+    .topSection__background.lazy__wrapper
+        img(src="/src/assets/gradient-preview.png", alt="preload").lazy.is-preloader
+        img(data-src="/src/assets/gradient.png", alt="itsFree").lazy.is-main
+    .container.topSection__container
+        .topSection__description
+            .topSection__label= "free for your bussines"
+            h1= "Digital First Gratitude"
+            .topSection__text
+                | As the world is going all digital it`s vital for 
+                | businesses to be one step ahead while remaining
+                | customer friendly. Your clients may not use
+                | cash that much anymore, but they still want
+                | to thank you for good service. 
+                a(href="/")
+                    | Let them do it cashless, contactless and fearless.
+
+            .buttons-group
+                +button("primary", "Get started", "/", "src/assets/plus.svg")
+                +button("link", "How it work", "/", "src/assets/arrow.svg")
+
+        .topSection__image.lazy__wrapper
+            img(src="/src/assets/topSection-preview.png", alt="preload").lazy.is-preloader
+            img(data-src="/src/assets/topSection.png", alt="topSection").lazy.is-main

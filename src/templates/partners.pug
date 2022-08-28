@@ -1,0 +1,49 @@
+- var list = [{
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/roots.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/roots.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/roots.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/roots.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/roots.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }, {
+-     image: "/src/assets/roots.png"
+- }, {
+-     image: "/src/assets/4hands.png"
+- }]
+
+.partners 
+    .container 
+        h2= "Our partners"
+    .partners__list
+        each item in list 
+            .partners__item 
+                img(src=item.image)
+    .partners__list.partners__list--reverse
+        each item in list 
+            .partners__item 
+                img(src=item.image)

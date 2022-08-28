@@ -1,0 +1,4 @@
+@mixin easing {
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}

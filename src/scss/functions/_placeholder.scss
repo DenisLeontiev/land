@@ -1,0 +1,24 @@
+@mixin placeholder($color, $changeOpacity: false) {
+	&::-webkit-input-placeholder {
+		color: $color;
+		transition: 100ms ease-in-out;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		transition: 100ms ease-in-out;
+		@if $changeOpacity {
+			opacity: .5;
+		}
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+		transition: 100ms ease-in-out;
+	}
+}
+
+/// @param {Color} $color [transparent]
+@mixin placeholder-on-focus($color: transparent) {
+	&:focus {
+		@include placeholder($color);
+	}
+}

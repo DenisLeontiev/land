@@ -1,0 +1,12 @@
+include button
+
+header.header
+    .container.header__container
+        .header-logo
+            img(src="src/assets/logo.svg", alt="Tipper")
+
+        a(href="/ar").header-language= "AR"
+
+        include navigation
+
+        +button("outline", "Get started", "/", "src/assets/plus.svg")

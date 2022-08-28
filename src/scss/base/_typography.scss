@@ -1,0 +1,51 @@
+h2 {
+    margin: 0 0 70px 0;
+    font-family: 'RFDewiExtended';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 110%;
+
+    &:not(.white) {
+        color: #131313;
+    }
+
+    &.white {
+        color: #fff;
+    }
+}
+
+ul {
+    margin: 0 0 30px 0;
+    padding: 0 0 0 21px;
+    list-style: none;
+
+    li {
+        position: relative;
+        margin-bottom: 10px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            left: -17px;
+            top: 8px;
+            border-radius: 100%;
+            background: #6E58F1;
+        }
+    }
+}
+
+p {
+    margin: 0 0 15px 0;
+
+    a {
+        color: #6E58F1;
+        @include easing;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+}

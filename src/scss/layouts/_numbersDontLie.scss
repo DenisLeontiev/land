@@ -1,0 +1,53 @@
+.numbersDontLie {
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 129px;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(50% - 10px);
+        padding: 58px 67px;
+        border-radius: 15px;
+        font-size: 26px;
+        line-height: 120%;
+        text-align: center;
+
+        img {
+            margin-top: 64px;
+            align-self: flex-end;
+            justify-content: flex-end;
+        }
+
+        span {
+            display: inline-block;
+            padding: 0 6px;
+            background: #E0F067;
+            border-radius: 5px;
+        }
+    }
+
+    &__left {
+        background-color: #fff;
+        color: #131313;
+    }
+
+    &__right {
+        background-color: #6E58F1;
+        color: #fff;
+
+        span {
+            color: #6E58F1;
+        }
+    }
+}

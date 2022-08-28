@@ -1,0 +1,55 @@
+- var list = [{
+-     image: "/src/assets/success-1.png",
+-     icon: "/src/assets/success-1.svg#success-1"
+- }, {
+-     image: "/src/assets/success-2.png",
+-     icon: "/src/assets/success-2.svg#success-2"
+- }, {
+-     image: "/src/assets/success-3.png",
+-     icon: "/src/assets/success-3.svg#success-3"
+- }, {
+-     image: "/src/assets/success-4.png",
+-     icon: "/src/assets/success-4.svg#success-4"
+- }, {
+-     image: "/src/assets/success-5.png",
+-     icon: "/src/assets/success-5.svg#success-5"
+- }, {
+-     image: "/src/assets/success-6.png",
+-     icon: "/src/assets/success-6.svg#success-6"
+- }, {
+-     image: "/src/assets/success-7.png",
+-     icon: "/src/assets/success-7.svg#success-7"
+- }, {
+-     image: "/src/assets/success-8.png",
+-     icon: "/src/assets/success-8.svg#success-8"
+- }]
+
+section.section.success
+    .conatiner 
+        h2= "Your Success is Our Goal"
+    .container.success__container
+        .success__bcg.lazy__wrapper
+            img(src="/src/assets/success-preview.png", alt="preload").lazy.is-preloader
+            img(data-src="/src/assets/success.png", alt="itsFree").lazy.is-main
+        .success__description 
+            .success__label= "It`s free"
+            .success__text= "While you grow your business, we handle tips and review management"
+            .success__hr 
+            .success__text= "The Tipper team will grant you with all the necessary materials"
+            ul
+                li= "Personalized plastic cards for employees"
+                li= "Information stands"
+                li= "Stickers"
+                li= "Coffee cup sleeves"
+            p= "And will quickly and free of charge set up integration with your POS system."
+
+        .success-slider
+            .success-slider__wrapper
+                each item in list
+                    .success-slider__item
+                        img(src=item.image, alt="#")
+            .success-slider__pagination
+                each item in list 
+                    div
+                        svg
+                            use(xlink:href=item.icon)

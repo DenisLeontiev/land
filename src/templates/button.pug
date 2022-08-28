@@ -1,4 +1,11 @@
-mixin button(type, label, link)
-    button(class!=attributes.class)
-        span= label
-        
+mixin button(type, label, link, icon)
+    if link
+        a(class=['button', `button--${type}`], href=link)
+            span= label
+            if icon
+                img(src=icon)
+    else
+        button(class=['button', `button--${type}`])
+            span= label
+            if icon
+                img(src=icon)

@@ -1,0 +1,39 @@
+- var list = [{
+-     link: "/",
+-     icon: "/src/assets/rbc.png"
+- }, {
+-     link: "/",
+-     icon: "/src/assets/russbc.png"
+- }, {
+-     link: "/",
+-     icon: "/src/assets/vcru.png"
+- }, {
+-     link: "/",
+-     icon: "/src/assets/rbc.png"
+- }, {
+-     link: "/",
+-     icon: "/src/assets/russbc.png"
+- }, {
+-     link: "/",
+-     icon: "/src/assets/vcru.png"
+- }, {
+-     link: "/",
+-     icon: "/src/assets/rbc.png"
+- }, {
+-     link: "/",
+-     icon: "/src/assets/russbc.png"
+- }, {
+-     link: "/",
+-     icon: "/src/assets/vcru.png"
+- }, {
+-     link: "/",
+-     icon: "/src/assets/vcru.png"
+- }]
+
+section.aboutUs
+    .container.aboutUs__container 
+        h2= "Media about us"
+        .aboutUs__list
+            each item in list 
+                a(href=item.link).aboutUs__item
+                    img(src=item.icon, alt="#")

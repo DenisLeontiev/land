@@ -1,0 +1,22 @@
+- var list = [{
+-     icon: "/src/assets/facebook.svg#facebook",
+-     link: "/"
+- }, {
+-     icon: "/src/assets/instagram.svg#instagram",
+-     link: "/"
+- }, {
+-     icon: "/src/assets/twitter.svg#twitter",
+-     link: "/"
+- }, {
+-     icon: "/src/assets/ln.svg#ln",
+-     link: "/"
+- }];
+
+.footer__social
+    h3= "Join the Tipper"
+    ul
+        each item in list 
+            li 
+                a(href=item.link)
+                    svg
+                        use(xlink:href=item.icon)

@@ -1,0 +1,29 @@
+- var list = [
+-     {
+-         icon: "/src/assets/reality.svg#reality",
+-         title: "Reality",
+-         text: "Up to 80% of bills are paid by card"
+-     }, {
+-         icon: "/src/assets/problem.svg#problem",
+-         title: "Problem",
+-         text: "Employees do not receive tips, motivation and service are decreases"
+-     }, {
+-         icon: "/src/assets/solution.svg#solution",
+-         title: "Solution",
+-         text: "Accepting tips is easy with easyclick"
+-     }
+- ];
+
+.features
+    .container.features__container
+        .features__list
+            each item, index in list
+                .features__item 
+                    svg
+                        use(xlink:href=item.icon)
+                    .features__description
+                        .features__title= item.title
+                        = item.text
+                if index < 2
+                    svg.features__arrow
+                        use(xlink:href="/src/assets/arrow-2.svg#arrow-2")

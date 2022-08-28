@@ -1,0 +1,43 @@
+.features {
+    background-color: #131313;
+
+    &__container {
+        background: #6E58F1;
+        border-radius: 15px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        padding: 50px 32px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        width: calc(100% / 3 - (108px / 3));
+
+        svg {
+            flex-shrink: 0;
+            width: 190px;
+            height: 190px;
+        }
+    }
+
+    &__description {
+        padding: 0 0 0 20px;
+        color: #fff;
+    }
+
+    &__title {
+        margin: 0 0 19px 0;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 130%;
+    }
+
+    &__arrow {
+        width: 54px;
+        height: 22px;
+    }
+}

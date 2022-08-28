@@ -1,0 +1,43 @@
+.itsFree {
+    background-color: #131313;
+    
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        min-height: fit-content;
+        max-height: 800px;
+        padding-bottom: 150px;
+        padding-top: 80px;
+    }
+
+    &__description {
+        width: 41%;
+        margin: 0 0 0 auto;
+        font-size: 26px;
+        line-height: 181%;
+        color: #F3F2F2;
+
+        p {
+            margin-top: 90px;
+        }
+
+        img {
+            display: inline-block;
+            margin: 0 12px;
+            vertical-align: middle;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        height: 100%;
+        width: 65.75%;
+        top: -110px;
+        left: -4.5%;
+
+        img {
+            max-width: 1052px;
+        }
+    }
+}

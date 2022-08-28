@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'RFDewiExtended';
+    src: url('/src/fonts/RFDewiExtendedBold.woff2') format('woff2'),
+         url('/src/fonts/RFDewiExtendedBold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'RFDewiExtended';
+    src: url('/src/fonts/RFDewiExtendedBlack.woff2') format('woff2'),
+         url('/src/fonts/RFDewiExtendedBlack.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'RFDewiExtended';
+    src: url('/src/fonts/RFDewiExtendedRegular.woff2') format('woff2'),
+         url('/src/fonts/RFDewiExtendedRegular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RFDewiExtended';
+    src: url('/src/fonts/RFDewiExtendedLight.woff2') format('woff2'),
+         url('/src/fonts/RFDewiExtendedLight.woff') format('woff');
+    font-weight: 200;
+}
