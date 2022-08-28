@@ -1,0 +1,13 @@
+.partners {
+  background-color: #131313;
+
+  h2 {
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    overflow: hidden;
+  }
+}
