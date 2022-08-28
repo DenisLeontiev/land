@@ -1,0 +1,50 @@
+.response {
+    background-color: #131313;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+
+    &__container {
+        position: relative;
+        padding-bottom: 98px;
+    }
+
+    &__description {
+        width: 55%;
+    }
+
+    &__text {
+        max-width: 655px;
+        font-size: 26px;
+        line-height: 120%;
+        color: #666666;
+
+        p {
+            margin-bottom: 30px;
+        }
+        
+        span {
+            display: inline-block;
+            padding: 0 6px;
+            background: linear-gradient(84.81deg, #6600FF -29.65%, #4922B6 26.64%, #933FB6 68.89%, #D48B89 101.19%);
+            border-radius: 5px;
+            color: #F3F2F2;
+        }
+
+        a {
+            color: #9989FB;
+            @include easing;
+
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        width: 60%;
+        height: 100%;
+    }
+}
