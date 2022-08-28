@@ -1,0 +1,58 @@
+include button
+
+- var list = [{
+-     "label": "Service Benefits",
+-     "link": "#service-benefits"
+- }, {
+-     "label": "Gratuity and Employee Loyalty",
+-     "link": "#gratuity-and-employee"
+- }, {
+-     "label": "Data Driven Culture",
+-     "link": "#data-driven-culture"
+- }, {
+-     "label": "Service Terms",
+-     "link": "#service-terms"
+- }, {
+-     "label": "Contacts",
+-     "link": "#contacts"
+- }];
+
+- var socials = [{
+-     icon: "/src/assets/facebook.svg#facebook",
+-     link: "/"
+- }, {
+-     icon: "/src/assets/instagram.svg#instagram",
+-     link: "/"
+- }, {
+-     icon: "/src/assets/twitter.svg#twitter",
+-     link: "/"
+- }, {
+-     icon: "/src/assets/in.svg#in",
+-     link: "/"
+- }];
+
+.mmenu-background.js-close-mmenu
+.mmenu
+    .mmenu__container
+        .mmenu-header
+            .mmenu-logotype
+                img(src="src/assets/logo.svg", alt="Tipper")
+            a(href="/ar").mmenu-language= "AR"
+            .mmenu-close.js-close-mmenu 
+                img(src="/src/assets/close.svg", alt="Close")
+
+        nav.mmenu-navigation
+            ul.mmenu-navigation__list
+                each item in list
+                    li.mmenu-navigation__item
+                        a(href=item.link)= item.label
+
+        .mmenu-divider 
+
+        .mmenu-social
+            each item in socials 
+                a(href=item.link)
+                    svg
+                        use(xlink:href=item.icon)
+
+        +button("primary", "Get started", "/", "src/assets/plus.svg")
