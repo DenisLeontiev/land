@@ -2,7 +2,7 @@ include button
 
 .contact 
     .container.contact__container 
-        svg.contact__bcg
-            use(xlink:href="/src/assets/contact.svg#contact")
-        h2= "We’ll help you explore all the nuances and advantages of Tipper"
+        .contact__background
+            img(src="/src/assets/contact.svg")
+        h2.white= "We’ll help you explore all the nuances and advantages of Tipper"
         +button("primary", "Contact the manager", "/", "src/assets/arrow.svg")

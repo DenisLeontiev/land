@@ -25,17 +25,17 @@
 - }]
 
 section.section.success
-    .conatiner 
-        h2= "Your Success is Our Goal"
+    .container 
+        h2.white= "Your Success is Our Goal"
     .container.success__container
-        .success__bcg.lazy__wrapper
+        .success__background.lazy__wrapper
             img(src="/src/assets/success-preview.png", alt="preload").lazy.is-preloader
             img(data-src="/src/assets/success.png", alt="itsFree").lazy.is-main
         .success__description 
             .success__label= "It`s free"
             .success__text= "While you grow your business, we handle tips and review management"
             .success__hr 
-            .success__text= "The Tipper team will grant you with all the necessary materials"
+            .success__text.title= "The Tipper team will grant you with all the necessary materials"
             ul
                 li= "Personalized plastic cards for employees"
                 li= "Information stands"
@@ -44,12 +44,17 @@ section.section.success
             p= "And will quickly and free of charge set up integration with your POS system."
 
         .success-slider
+            each item, index in list
+                if index == 0
+                    input(type="radio" name="successSlider" id=`success-${index + 1}` checked)
+                else
+                    input(type="radio" name="successSlider" id=`success-${index + 1}`)
             .success-slider__wrapper
-                each item in list
-                    .success-slider__item
+                each item, index in list
+                    div(class=['success-slider__item', `success-slider__item--${index + 1}`])
                         img(src=item.image, alt="#")
             .success-slider__pagination
-                each item in list 
-                    div
+                each item, index in list 
+                    label(for=`success-${index + 1}` class=`successLabel-${index + 1}`)
                         svg
                             use(xlink:href=item.icon)

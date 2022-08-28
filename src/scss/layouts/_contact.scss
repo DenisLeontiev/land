@@ -1,0 +1,46 @@
+.contact {
+    background-color: #131313;
+
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 64px;
+        padding: 211px 0 272px 0;
+    }
+
+    &__background {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 100%;
+        max-height: 526px;
+        transform: translateY(calc(-50% - 36px));
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+
+        img {
+            display: block;
+            height: 100%;
+            max-width: unset;
+        }
+    }
+
+    h2 {
+        z-index: 2;
+        position: relative;
+        margin: 0;
+        padding-left: 110px;
+        width: 100%;
+        max-width: 1035px;
+        font-size: 48px;
+        line-height: 1.2;
+    }
+
+    .button {
+        z-index: 2;
+        position: relative;
+    }
+}
