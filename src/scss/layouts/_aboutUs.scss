@@ -5,13 +5,17 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    border: 1px solid #666;
     border-radius: 15px;
+    gap: 1px;
+    background-color: #666;
+    border: 1px solid #666;
+    overflow: hidden;
   }
 
   &__item {
-    border: 1px solid #666;
+    border: 1px solid transparent;
     padding: 25px;
     text-align: center;
+    background-color: #131313;
   }
 }
