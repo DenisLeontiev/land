@@ -45,15 +45,13 @@
       }
 
       @media (max-width: 1023px) and (min-width: 768px) {
-        left: -200px;
-
         &.is-main {
           left: -200px;
         }
       }
 
       @media (max-width: 767px) {
-        transform: translateX(10%);
+        transform: translateX(-10%);
       }
     }
   }
