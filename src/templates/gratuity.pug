@@ -4,6 +4,8 @@ section.section.gratuity
     .container.gratuity__container 
         .gratuity__description
             h2= "Gratuity and Employee Loyalty to the Moon"
+            .gratuity__image.is-tablet
+                img(src="/src/assets/gratuity.svg", alt="#")
             .gratuity__text
                 | Implement our e-tip system to boost the gratuity 
                 span= "volume up to 30%" 
@@ -26,5 +28,5 @@ section.section.gratuity
             
             +button("primary", "Increase loyalty", "/", "src/assets/plus.svg")
 
-        .gratuity__image
+        .gratuity__image.from-desktop
             img(src="/src/assets/gratuity.svg", alt="#")

@@ -5,6 +5,9 @@ section.section.response
                 | Reactive Response
                 br
                 | to Fuel Reputation Level
+            .response__image.lazy__wrapper.is-tablet
+                img(src="/src/assets/response-s-preview.png", alt="preload").lazy.is-preloader
+                img(data-src="/src/assets/response-s.png", alt="reactive").lazy.is-main
             .response__text 
                 p
                     span= "Handle negative feedback right away" 
@@ -16,6 +19,6 @@ section.section.response
                     | a customer`s negative feedback. 
                 a(href="/")= "Raise your credibility level by solving problems here and now."
 
-        .response__image.lazy__wrapper
+        .response__image.lazy__wrapper.from-desktop
             img(src="/src/assets/reactive-preview.png", alt="preload").lazy.is-preloader
             img(data-src="/src/assets/reactive.png", alt="reactive").lazy.is-main

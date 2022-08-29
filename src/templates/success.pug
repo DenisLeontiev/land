@@ -28,9 +28,12 @@ section.section.success
     .container 
         h2.white= "Your Success is Our Goal"
     .container.success__container
-        .success__background.lazy__wrapper
+        .success__background.lazy__wrapper.from-tablet
             img(src="/src/assets/success-preview.png", alt="preload").lazy.is-preloader
             img(data-src="/src/assets/success.png", alt="itsFree").lazy.is-main
+        .success__background.lazy__wrapper.is-mobile
+            img(src="/src/assets/success-m-preview.png", alt="preload").lazy.is-preloader
+            img(data-src="/src/assets/success-m.png", alt="itsFree").lazy.is-main
         .success__description 
             .success__label= "It`s free"
             .success__text= "While you grow your business, we handle tips and review management"

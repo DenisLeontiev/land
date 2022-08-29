@@ -18,7 +18,7 @@ section.section.howItWork
     .container
         .howItWork__header
             h2.white= "How it work"
-            +button("primary", "Watch our video tutorial", "/", "src/assets/arrow.svg")
+            +button("primary", "Watch our video tutorial", "/", "src/assets/arrow.svg").from-tablet
         .howItWork__list
             each item, index in list
                 .howItWork__item
@@ -27,3 +27,4 @@ section.section.howItWork
                     .howItWork__description
                         .howItWork__title= item.title
                         = item.text
+        +button("primary", "Watch our video tutorial", "/", "src/assets/arrow.svg").is-mobile

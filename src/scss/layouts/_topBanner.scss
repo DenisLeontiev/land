@@ -1,7 +1,9 @@
 .topSection {
     position: relative;
-    min-height: 100vh;
     background-color: #131313;
+    @media (min-width: 1240px) {
+        min-height: 100vh;
+    }
 
     &__background {
         position: absolute;
@@ -14,6 +16,17 @@
         overflow: hidden;
         object-fit: cover;
         object-position: center;
+
+        @media (max-width: 1239px) and (min-width: 768px) {
+            left: unset;
+            top: unset;
+            bottom: 0;
+            right: 0;
+        }
+
+        @media (max-width: 767px) {
+            height: 645px;
+        }
 
         img {
             max-width: unset;
@@ -29,6 +42,18 @@
                 width: auto;
                 height: 100%;
             }
+
+            @media (max-width: 1023px) and (min-width: 768px) {
+                right: -200px;
+
+                &.is-main {
+                    right: -200px;
+                }
+            }
+
+            @media (max-width: 767px) {
+                transform: translateX(10%);
+            }
         }
     }
 
@@ -37,42 +62,98 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        min-height: 100vh;
         padding-top: 100px;
         padding-bottom: 40px;
+
+        @media (min-width: 1240px) {
+            min-height: 100vh;
+        }
     }
 
     &__image {
-        position: absolute;
-        top: 35px;
-        right: 0;
-        width: 57.8125%;
-        height: 100%;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            right: 0;
+            height: 100%;
+        }
+
+        @media (min-width: 1240px) {
+            width: 57.8125%;
+            top: 35px;
+        }
+
+        @media (max-width: 1239px) and (min-width: 768px) {
+            top: 35px;
+            right: -85px;
+            width: 524px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
 
         img {
-            max-width: unset;
-            width: auto;
-            height: 100%;
-
-            &.is-main {
+            @media (min-width: 1240px) {
                 max-width: unset;
                 width: auto;
                 height: 100%;
+    
+                &.is-main {
+                    max-width: unset;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+
+            @media (max-width: 1239px) and (min-width: 768px) {
+                width: 100%;
+    
+                &.is-main {
+                    width: 100%;
+                    top: unset;
+                    bottom: 0;
+                }
+            }
+
+            @media (max-width: 767px) {
+                
             }
         }
     }
 
     &__description {
-        width: 42.1875%;
+        @media (min-width: 1240px) {
+            width: 42.1875%;
+        }
+
+        @media (max-width: 1239px) and (min-width: 768px) {
+            width: 45%;
+        }
+
+        @media (max-width: 767px) {
+            margin: 0 auto;
+        }
     }
 
     &__label {
         display: inline-block;
-        margin: 100px 0 76px 0;
-        padding: 10px 20px;
+        @media (min-width: 1240px) {
+            margin: 100px 0 76px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        @media (max-width: 1239px) {
+            margin: 28px 0 16px 0;
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+        
         border: 1px solid #E0F067;
-        border-radius: 10px;
-        font-size: 16px;
         line-height: 130%;
         letter-spacing: .5px;
         text-transform: uppercase;
@@ -80,8 +161,16 @@
     }
 
     &__text {
-        max-width: 665px;
-        margin: 0 0 76px 0;
+        @media (min-width: 1240px) {
+            margin: 0 0 76px 0;
+            max-width: 665px;
+        }
+
+        @media (max-width: 1239px) {
+            margin: 0 0 43px 0;
+            max-width: 340px;
+            font-size: 16px;
+        }
 
         a {
             color: #9989FB;
@@ -94,11 +183,24 @@
     }
 
     h1 {
-        margin: 0 0 50px 0;
+        @media (min-width: 1240px) {
+            margin: 0 0 50px 0;
+            font-size: 96px;
+        }
+        @media (max-width: 1239px) {
+            margin: 0 0 27px 0;
+            font-size: 40px;
+        }
+
         font-family: 'RFDewiExtended';
-        font-weight: 600;
-        font-size: 96px;
         line-height: 100%;
+        font-weight: 600;
         color: #F3F2F2;
+    }
+
+    .button {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
 }

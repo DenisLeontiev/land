@@ -70,6 +70,10 @@
                 font-family: 'RFDewiExtended';
                 font-size: 26px;
                 line-height: 120%;
+
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
             }
 
             a {

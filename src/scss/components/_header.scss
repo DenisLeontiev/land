@@ -22,10 +22,37 @@
         line-height: 120%;
         color: #A6A6A6;
 
+        @media (max-width: 1239px) {
+            margin: auto 20px auto auto;
+        }
+
         @include easing;
 
         &:hover {
             color: #fff;
+        }
+    }
+
+    &-burger {
+        @media (min-width: 1240px) {
+            display: none;
+        }
+
+        @media (max-width: 1239px) {
+            flex-shrink: 0;
+            width: 21px;
+            height: 14px;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .button {
+        @media (max-width: 1239px) {
+            display: none;
         }
     }
 }

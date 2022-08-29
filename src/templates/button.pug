@@ -1,11 +1,11 @@
 mixin button(type, label, link, icon)
     if link
-        a(class=['button', `button--${type}`], href=link)
+        a(class=['button', `button--${type}`, attributes.class], href=link)
             span= label
             if icon
                 img(src=icon)
     else
-        button(class=['button', `button--${type}`])
+        button(class=['button', `button--${type}`, attributes.class])
             span= label
             if icon
                 img(src=icon)

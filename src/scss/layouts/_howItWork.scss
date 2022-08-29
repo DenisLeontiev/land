@@ -1,9 +1,24 @@
 .howItWork {
     background-color: #131313;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
     overflow: hidden;
-    padding-bottom: 156px;
+    
+    @media (min-width: 1024px) {
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        padding-bottom: 156px;
+    }
+
+    @media (max-width: 1023px) and (min-width: 768px) {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media (max-width: 767px) {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-bottom: 24px;
+    }
 
     &__header {
         display: flex;
@@ -18,8 +33,14 @@
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
         gap: 0 20px;
+        
+        @media (max-width: 767px) {
+            padding: 47px 0 20px 0;
+            margin-bottom: 60px;
+            margin-top: -50px;
+            overflow-x: auto;
+        }
     }
 
     &__item {
@@ -27,10 +48,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: calc(100% / 3 - (40px / 3));
         padding: 24px 36px 30px 36px;
         border: 1px solid #666666;
         border-radius: 15px;
+        
+        @media (min-width: 768px) {
+            width: calc(100% / 3 - (40px / 3));
+        }
+
+        @media (max-width: 767px) {
+            flex-shrink: 0;
+            width: 274px;
+        }
 
         img {
             width: 300px;
@@ -40,18 +69,30 @@
 
     &__number {
         position: absolute;
-        top: 24px;
-        left: 24px;
-        width: 54px;
-        height: 54px;
         border-radius: 100%;
         background-color: #6E58F1;
         font-family: 'RFDewiExtended';
         font-weight: 400;
-        font-size: 26px;
-        line-height: 52px;
         text-align: center;
         color: #FFFFFF;
+        
+        @media (min-width: 1024px) {
+            top: 24px;
+            left: 24px;
+            width: 54px;
+            height: 54px;
+            font-size: 26px;
+            line-height: 52px;
+        }
+
+        @media (max-width: 1023px){ 
+            top: -20px;
+            left: 14px;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            line-height: 38px;
+        }
     }
 
     &__description {
@@ -62,8 +103,22 @@
 
     &__title {
         margin: 0 0 5px 0;
-        font-size: 32px;
-        line-height: 125.5%;
         color: #9989FB;
+        
+        @media (min-width: 1024px) {
+            font-size: 32px;
+            line-height: 125.5%;
+        }
+
+        @media (max-width: 1023px){ 
+            font-size: 26px;
+            line-height: 120%;
+        }
+    }
+
+    .button {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
 }

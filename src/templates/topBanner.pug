@@ -8,6 +8,9 @@ include button
         .topSection__description
             .topSection__label= "free for your bussines"
             h1= "Digital First Gratitude"
+            .topSection__image.lazy__wrapper.is-mobile
+                img(src="/src/assets/topSection-preview.png", alt="preload").lazy.is-preloader
+                img(data-src="/src/assets/topSection.png", alt="topSection").lazy.is-main
             .topSection__text
                 | As the world is going all digital it`s vital for 
                 | businesses to be one step ahead while remaining
@@ -21,6 +24,6 @@ include button
                 +button("primary", "Get started", "/", "src/assets/plus.svg")
                 +button("link", "How it work", "/", "src/assets/arrow.svg")
 
-        .topSection__image.lazy__wrapper
+        .topSection__image.lazy__wrapper.from-tablet
             img(src="/src/assets/topSection-preview.png", alt="preload").lazy.is-preloader
             img(data-src="/src/assets/topSection.png", alt="topSection").lazy.is-main
