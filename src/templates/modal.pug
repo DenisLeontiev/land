@@ -1,0 +1,48 @@
+include button
+
+.modal-background 
+.modal 
+    .modal-container 
+        .modal-wrapper
+            .modal-request
+                .modal-header.is-mobile 
+                    .modal-logotype
+                        img(src="src/assets/logo-r.svg", alt="Tipper")
+                    a(href="/ar").modal-language= "AR"
+                    .modal-close.js-close-modal
+                        img(src="/src/assets/close-r.svg", alt="Close")
+                .modal-close.js-close-modal.from-tablet
+                        img(src="/src/assets/close-r.svg", alt="Close")
+                .modal-content
+                    .modal-content__wrapper
+                        .modal-content__description
+                            h2 
+                                | I want to connect 
+                                | with 
+                                span= "Tipper"
+                            img(src="/src/assets/modal.png", alt="#")
+                        form.modal-form.form 
+                            label.form-field
+                                input(type="text" placeholder=" " class="form-input")
+                                span= "What's your name?"
+                            label.form-field
+                                input(type="phone" placeholder=" "  class="form-input")
+                                span= "Contact phone"
+                            label.form-field
+                                input(type="text" placeholder=" "  class="form-input")
+                                span= "What is the name of your company?"
+                            .modal-form__role 
+                                h3= "Your role:"
+                            label.form-checkbox
+                                input(type="checkbox")
+                                pre
+                                span= "I am a manager / leader, I want to connect an institution" 
+                            label.form-checkbox
+                                input(type="checkbox")
+                                pre
+                                span= "I am an employee of the establishment, I want to receive more tips"
+                            .form-description= "We connect only establishments. You can share the link with your management."
+                            +button("primary", "Started free", "/", "src/assets/plus.svg")
+                            .form-description 
+                                | By clicking “Started free” below, I confirm that the Company fully acknowledges, accepts and consents to 
+                                a(href="/")= "Privacy Notice."

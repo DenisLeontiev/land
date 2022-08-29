@@ -2,10 +2,16 @@ const mmenu = () => {
     const openButton = document.querySelector('.js-open-mmenu');
     const closeButtons = document.querySelectorAll('.js-close-mmenu');
 
-    openButton.addEventListener('click', open);
+    openButton.addEventListener('click', event => {
+        event.preventDefault();
+        open();
+    });
 
     closeButtons.forEach(button => {
-        button.addEventListener('click', close);
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            close();
+        });
     });
 
     function open() {

@@ -17,8 +17,22 @@
 }
 
 /// @param {Color} $color [transparent]
-@mixin placeholder-on-focus($color: transparent) {
+@mixin placeholder-on-focus() {
 	&:focus {
-		@include placeholder($color);
+		&::-webkit-input-placeholder {
+			font-size: 12px;
+			transform: translateY(-6px);
+			transition: 100ms ease-in-out;
+		}
+		&::-moz-placeholder {
+			font-size: 12px;
+			transform: translateY(-6px);
+			transition: 100ms ease-in-out;
+		}
+		&:-ms-input-placeholder {
+			font-size: 12px;
+			transform: translateY(-6px);
+			transition: 100ms ease-in-out;
+		}
 	}
 }
