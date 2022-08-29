@@ -2,31 +2,24 @@ include button
 
 section.section.gratuity
     .container.gratuity__container 
+        .gratuity__image.from-desktop
+            img(src="/src/assets/gratuity.svg", alt="#")
         .gratuity__description
-            h2= "Gratuity and Employee Loyalty to the Moon"
+            h2= "معنا ترتقي بمستوى تقدير موظفيك وولائهم إلى عنان السماء "
             .gratuity__image.is-tablet
                 img(src="/src/assets/gratuity.svg", alt="#")
             .gratuity__text
-                | Implement our e-tip system to boost the gratuity 
-                span= "volume up to 30%" 
-                | and counting which is a key to your employees` loyalty and desire to perform better.
+                | يمنحك استخدم نظام الإكرامية الإلكتروني الذي نوفره لك لزيادة حجم المكافأة حتى 30٪ وأكثر، وهو أمر لا غنى عنه للحفاظ على ولاء موظفيك وتحفيزهم على تحسين الأداء.
             p
-                | Your employees may encourage your customers to use Tipper 
-                | at the right moment with a set of dedicated solutions: 
+                | قد يشجع موظفوك عملائك على استخدام Tipper في الوقت المناسب مع مجموعة من الحلول المخصصة:
             ul 
-                li 
-                    | A plastic card with a personal QR code will
-                    br
-                    | accompany the receipt;
-                li= "A stand up display will have all the info;"
-                li= "A sticker will make it fun."
+                li= "إرفاق بطاقة بلاستيكية بها رمز استجابة سريع شخصي مع الإيصال"
+                li= "وضع لافتة صغيرة تتضمن جميع المعلومات ذات الصلة، أ"
+                li= "ملصق لطيف جذاب"
             p
-                | As a result the employee will 
-                a(href="/")= "raise their income " 
-                | and you as the owner will receive 
-                a(href="/")= "honest and valuable feedback."
+                | بهذه الطريقة سيرفع الموظف دخله وستتلقى أنت بصفتك المالك تعليقات صادقة وقيمة.
+
             
             +button("primary", "Increase loyalty", "/", "src/assets/plus.svg")
 
-        .gratuity__image.from-desktop
-            img(src="/src/assets/gratuity.svg", alt="#")
+        

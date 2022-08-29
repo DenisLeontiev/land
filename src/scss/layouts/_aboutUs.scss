@@ -1,13 +1,17 @@
 .aboutUs {
   background-color: #131313;
 
+  h2 {
+    text-align: left;
+  }
+
   &__list {
     display: grid;
     gap: 1px;
     background-color: #666;
     border: 1px solid #666;
     overflow: hidden;
-    
+
     @media (min-width: 768px) {
       grid-template-columns: repeat(5, 1fr);
       border-radius: 15px;

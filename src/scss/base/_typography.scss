@@ -1,66 +1,67 @@
 h2 {
-    font-family: 'RFDewiExtended';
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%;
-    
-    @media (min-width: 1024px) {
-        margin: 0 0 70px 0;
-        font-size: 64px;
-    }
+  font-family: "RFDewiExtended";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  text-align: right;
 
-    @media (max-width: 1023px) {
-        margin: 0 0 50px 0;
-        font-size: 32px;
-    }
+  @media (min-width: 1024px) {
+    margin: 0 0 70px 0;
+    font-size: 64px;
+  }
 
-    &:not(.white) {
-        color: #131313;
-    }
+  @media (max-width: 1023px) {
+    margin: 0 0 50px 0;
+    font-size: 32px;
+  }
 
-    &.white {
-        color: #fff;
-    }
+  &:not(.white) {
+    color: #131313;
+  }
+
+  &.white {
+    color: #fff;
+  }
 }
 
 ul:not([class]) {
-    margin: 0 0 15px 0;
-    padding: 0 0 0 21px;
-    list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0 21px 0 0;
+  list-style: none;
 
-    li {
-        position: relative;
-        margin-bottom: 10px;
+  li {
+    position: relative;
+    margin-bottom: 10px;
 
-        &::before {
-            content: '';
-            position: absolute;
-            width: 9px;
-            height: 9px;
-            left: -17px;
-            border-radius: 100%;
-            background: #6E58F1;
-            
-            @media (min-width: 1024px) {
-                top: 8px;
-            }
-        
-            @media (max-width: 1023px) {
-                top: 4px;
-            }
-        }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      right: -17px;
+      border-radius: 100%;
+      background: #6e58f1;
+
+      @media (min-width: 1024px) {
+        top: 8px;
+      }
+
+      @media (max-width: 1023px) {
+        top: 4px;
+      }
     }
+  }
 }
 
 p {
-    margin: 0 0 15px 0;
+  margin: 0 0 15px 0;
 
-    a {
-        color: #6E58F1;
-        @include easing;
+  a {
+    color: #6e58f1;
+    @include easing;
 
-        &:hover {
-            opacity: .6;
-        }
+    &:hover {
+      opacity: 0.6;
     }
+  }
 }

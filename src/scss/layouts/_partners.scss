@@ -11,13 +11,13 @@
     overflow: hidden;
     flex-shrink: 0;
     display: flex;
-    
+
     @media (min-width: 768px) {
       margin: 0 0 20px 0;
       height: 109px;
       gap: 0 20px;
     }
-    
+
     @media (max-width: 767px) {
       margin: 0 0 10px 0;
       height: 52px;
@@ -25,18 +25,16 @@
     }
 
     &--reverse {
-
       .partners__item {
-        
         @media (min-width: 768px) {
           animation: autoScroll 20000ms linear infinite;
+          animation-direction: reverse;
         }
-        
+
         @media (max-width: 767px) {
           animation: autoScrollM 20000ms linear infinite;
           animation-direction: reverse;
         }
-
       }
     }
   }
@@ -47,7 +45,7 @@
     align-items: center;
     flex-shrink: 0;
     border: 1px solid #272727;
-    
+
     @media (min-width: 768px) {
       padding: 36px;
       border-radius: 15px;
